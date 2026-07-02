@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <h1>BASKETVALL SCOREBOARD</h1> -->
+    <div id="main">
+     <h1 id="status"></h1>
+     <h3 id="winner"></h3>
+        <div id="score-wrapper">
+            <!--HOME SCORE -->
+            <div class="score" id="home">
+                <h1 class="tittle">HOME</h1>
+                <h1 class="scoreboard" id="homescore">0</h1>
+                <button class="button" onclick="plush1()">+1</button>
+                <button class="button" onclick="plush2()">+2</button>
+                <button class="button" onclick="plush3()">+3</button>
+                <!-- HOME FOUL -->
+                <h1 id="foulh" class="foul">foul: 0</h1>
+                <button class="button" onclick="homefoul()">foul+1</button>
+            </div>
+           <!-- TIMER AND PERIOD -->
+            <div class="score" id="time-period-wrapper">
+                <h1 class="time_period"id="timer">60</h1>
+                <button class="button" onclick="starttimer()">Start</button>
+                <button class="button" onclick="pausetimer()">Pause</button>
+                <button class="button" onclick="reset()">Reset</button>
+                <h1  class="time_period" id="period">PERIOD:1</h1>
+                <button class="button" onclick="updateper()">Next Period</button>
+            
+            </div>
+           <!--  GUEST SCORE -->
+            <div class="score" id="guest">
+                <h1 class="tittle">GUEST</h1>
+                <h1 class="scoreboard" id="guestscore">0</h1>
+                <button class="button" onclick="plusg1()">+1</button>
+                <button class="button" onclick="plusg2()">+2</button>
+                <button class="button" onclick="plusg3()">+3</button>
+            <!-- GUEST FOUL -->
+                <h1 id="foulg" class="foul">foul: 0</h1>
+                <button class="button" onclick="guestfoul()">foul+1</button>
+            </div>
+        </div>
+        <button class="button" onclick="newgame()">RESTART</button>
+    </div>
+    <Script src="sscript.js"></Script>
+
+</body>
+
+</html>
